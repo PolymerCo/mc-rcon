@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@polymer-co/mc-rcon",
+  "version": "1.0.0",
+  "description": "TypeScript library for communicating with Minecraft Servers via RCON.",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "npm run clean && npm install && tsc --project tsconfig.json",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "serve": "npm run compile && node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "engine": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolymerCo/mc-rcon.git"
+  },
+  "keywords": [
+    "rcon",
+    "minecraft"
+  ],
+  "author": "Polymer Co.",
+  "license": "MIT",
+  "dependencies": {
+    "rcon": "^1.1.0",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/PolymerCo/mc-rcon/issues"
+  },
+  "homepage": "https://github.com/PolymerCo/mc-rcon#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.30",
+    "prettier": "^2.6.2"
+  }
+}
